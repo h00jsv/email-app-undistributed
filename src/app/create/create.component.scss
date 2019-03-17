@@ -1,0 +1,119 @@
+.wrapper {
+  min-width: 1204px;
+  padding: 0;
+  margin: 0 -8rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background: #fff;
+      padding: 2em;
+      border-bottom: 1px solid #000;
+      margin-bottom: 0;
+
+      form {
+        #name {
+          font-size: 1em;
+          padding-right: 3.5em;
+        }
+        #subject {
+          font-size: 1em;
+          padding-right: 1em;
+        }
+        #message {
+          font-size: 0.8em;
+          padding-right: 9em;
+          padding-bottom: 8em;
+        }
+      }
+    }
+  }
+
+  .button {
+    .myButton {
+      color: #fff;
+      background: #036;
+      margin: 10px 10px;
+      padding: 10px 20px;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      float: right;
+
+      .myButton:active {
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1210px) {
+  .button {
+    margin-right: 50px;
+  }
+}
+
+@media screen and(max-width: 1130px) {
+  ul {
+    li {
+      margin-left: 10px;
+    }
+  }
+  .button {
+    margin-right: 150px;
+  }
+}
+@media screen and(max-width: 1030px) {
+  ul {
+    li {
+      margin-left: 30px;
+    }
+  }
+  .button {
+    margin-right: 180px;
+  }
+}
+@media screen and(max-width: 992px) {
+  ul {
+    li {
+      font-size: 1em;
+      margin-left: 30px;
+    }
+  }
+  .button {
+    margin-right: 250px;
+  }
+}
+
+@media screen and(max-width: 910px) {
+  .button {
+    float: left;
+    margin-left: 60px;
+  }
+}
+@media screen and(max-width: 750px) {
+  ul {
+    li {
+      font-size: 0.9em;
+      margin-left: 40px;
+    }
+  }
+  .button {
+    float: left;
+    margin-left: 65px;
+  }
+}
+@media screen and(max-width: 630px) {
+  ul {
+    li {
+      font-size: 0.9em;
+      margin-left: 60px;
+    }
+  }
+  .button {
+    margin-left: 82px;
+  }
+}

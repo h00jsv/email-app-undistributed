@@ -1,0 +1,22 @@
+<div *ngIf="email">
+  <div class="wrapper">
+    <ul>
+      <li><strong>To:</strong> {{ email.from }}</li>
+      <li><strong>Subject:</strong> {{ email.subject }}</li>
+      <li>
+        <p>{{ email.text }}</p>
+      </li>
+    </ul>
+
+    <div class="button">
+      <button class="myButtonPrev" routerLink="/list">
+        <i class="fa fa-home"></i>
+        <span>prev</span>
+      </button>
+      <button class="myButton" routerLink="/list">
+        <i class="fa fa-home"></i>
+        <span>next</span>
+      </button>
+    </div>
+  </div>
+</div>

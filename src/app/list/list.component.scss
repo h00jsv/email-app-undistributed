@@ -1,0 +1,123 @@
+.wrapper {
+  padding: 0;
+  margin: 0 -8rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background: #fff;
+      margin: 0;
+      border-bottom: 1px solid #000;
+      padding: 1.2em;
+
+      a {
+        color: #000;
+
+        &.from {
+          font-size: 0.8em;
+          font-weight: bold;
+          text-transform: lowercase;
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+        }
+        &.subject {
+          font-size: 0.7em;
+          font-weight: normal;
+          margin-left: 400px;
+          text-transform: uppercase;
+          position: absolute;
+          overflow: hidden;
+          display: table;
+        }
+      }
+    }
+  }
+
+  .delbtn {
+    float: right;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: red;
+  }
+}
+
+@media screen and(max-width: 1280px) {
+  .wrapper  {
+    margin: 0 -8rem;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        flex-basis: 100%;
+        margin-left: 10px;
+      }
+    }
+    .delbtn {
+      margin-right: 30px;
+    }
+  }
+}
+@media screen and(max-width: 1090px) {
+  .wrapper  {
+    margin: 0 -8rem;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      a {
+        flex-basis: 100%;
+        margin-left: 40px;
+      }
+    }
+    .delbtn {
+      margin-right: 50px;
+    }
+  }
+}
+@media screen and(max-width: 860px) {
+  a {
+    width: 100%;
+
+    &.subject {
+      margin-right: 90px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and(max-width: 730px) {
+  .wrapper  {
+    margin: 0;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      a {
+        width: 100%;
+
+        &.from {
+          margin-left: 70px;
+        }
+
+        &.subject {
+          margin-right: 90px;
+          width: 100%;
+        }
+      }
+    }
+    .delbtn {
+      margin-right: 100px;
+    }
+  }
+}

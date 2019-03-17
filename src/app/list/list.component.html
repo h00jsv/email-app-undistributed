@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <ul *ngIf="emails">
+    <li *ngFor="let email of emails">
+      <a class="from" routerLink="/details/{{ email.id }}">{{ email.from }}</a>
+      <a class="subject" routerLink="/details/{{ email.subject }}">{{
+        email.subject
+      }}</a>
+    </li>
+  </ul>
+
+  <button class="delbtn">Delete</button>
+</div>
